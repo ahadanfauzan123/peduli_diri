@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.icon-black {
+    color: rgb(39, 37, 37);
+}
+.icon-white {
+    color: rgb(223, 217, 217);
+}
+.icon-danger {
+    color: rgb(211, 36, 36);
+}
+.icon-green {
+    color: rgb(45, 218, 45);
+}
+td {
+    margin: 8px;
+}
