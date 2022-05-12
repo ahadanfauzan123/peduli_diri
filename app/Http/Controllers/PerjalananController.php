@@ -29,7 +29,15 @@ class PerjalananController extends Controller
             "jam" => "required",
             "lokasi" => "required",
             "suhu" => "required",
+        ],[
+            "suhu.min" => "suhu minimal 36",  
         ]);
+        if($validated["suhu"] > 40) {
+            return back()->with('suhu_error', 'suhu harus diantara 33-40');
+        }
+        elseif($validated['suhu'] < 33) {
+            return back()->with('suhu_error', 'suhu harus diantara 33-40');
+        }
         Perjalanan::create($validated);
         return redirect('/data')->with('tambah_data', " berhasil menambahkan data");
     }

@@ -33,7 +33,7 @@
                 </div>
                 <div class="flex flex-col gap-y-2">
                     <label for="nik" class="text-xl font-semibold">nik: </label>
-                    <input type="password" name="password" id="nik" class="px-4 w-[450px] h-[60px] text-2xl font-bold rounded-2xl bg-gray-200 @error('password') border-2 border-red-400 @enderror">
+                    <input type="textp" name="password" id="nik" class="px-4 w-[450px] h-[60px] text-2xl font-bold rounded-2xl bg-gray-200 @error('password') border-2 border-red-400 @enderror">
                 </div>
                 <div class="flex justify-between items-center w-[450px]">
                     <p class="text-lg font-light">Belum punya akun? <a href="/register" class="text-blue-400 font-semibold">Register</a></p>

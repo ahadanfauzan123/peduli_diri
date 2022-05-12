@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/ed9936a549.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>
         @yield('title')
@@ -18,7 +19,6 @@
 <body class="bg-gradient-to-r from-cyan-400 to bg-cyan-600 w-screen min-h-screen overflow-x-hidden flex flex-col items-center gap-y-3">
     @include('layouts.navbar')
     @yield('content')
-
     <script>
         const navmenu = document.getElementById('navmenu');
         const formtanggal = document.getElementById('formtanggal');

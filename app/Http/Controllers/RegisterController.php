@@ -16,7 +16,7 @@ class RegisterController extends Controller
     public function storeUser(Request $request) {
         $validated = $request->validate([
             'name' => 'required',
-            'password' => 'required|unique:users,password|min:6|max:12'
+            'password' => 'required|unique:users,password|min:8|max:16'
         ]);
         
         $validated["password"] = Hash::make($validated["password"]);
